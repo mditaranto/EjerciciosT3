@@ -8,24 +8,31 @@ public class Ejercicio02 {
 
 		int n;
 		boolean primo = false;
+		int cont = 0;
 
 		Scanner sc = new Scanner(System.in);
 
+		System.out.println("");
 		n = sc.nextInt();
 
 		for (int i = 2; i <= n; i++) {
-			for (int a = 1; a < i; a++) {
+			if (i==2) {
+				cont++;
+			}
+			for (int a = 2; a < i; a++) {
 				if (i % a == 0) {
 					primo = false;
 					break;
 				} 
 				primo = true;
 				if (primo == true && a == i - 1) {
-					System.out.println(i);
+					cont++;
 				}
 			}
 		}
-
+		
+		System.out.println(cont);
+		sc.close();
 	}
 
 }
