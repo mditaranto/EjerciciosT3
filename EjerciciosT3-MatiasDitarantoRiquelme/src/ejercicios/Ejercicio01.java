@@ -31,24 +31,20 @@ public class Ejercicio01 {
 		 * mediante una condicional nos aseguramos que haya introducido correctamente la
 		 * hora
 		 */
+		
+		
 		if (h >= 0 && min >= 0 && seg >= 0 && h <= 24 && min <= 60) {
-			
-			seg += segaum + (h*3600) + (min*60);
-			
-			h = (seg/3600);
-			min = (seg%3600)/60;
-			seg = (seg%60)%60;
-			
-			if (h>23) {
-				h -= 24;
+			seg += segaum + (h *= 3600) + (h *= 60);
+			while (seg>60) {
+				h = seg / 3600;
+				min = (seg%3600)/60;
+				seg = (seg%3600)%60;
 			}
-				
-				// Se le ofrece al usuario los resultados en horas, minutos y segundos
-				System.out.println("Pasados un segundo son las: " + h + ":" + min + ":" + seg);
 	
 		} else {
 			System.out.println("La hora introducida no es correcta.");
 		}
+		System.out.println(h + min + seg);
 		sc.close(); // Se cierra el objeto Scanner
 	}
 
