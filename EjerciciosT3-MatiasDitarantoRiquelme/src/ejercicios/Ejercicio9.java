@@ -6,7 +6,7 @@ public class Ejercicio9 {
 
 	public static void main(String[] args) {
 		
-		int n;
+		long n;
 		int cont = 0;
 		
 		Scanner sc = new Scanner(System.in);
