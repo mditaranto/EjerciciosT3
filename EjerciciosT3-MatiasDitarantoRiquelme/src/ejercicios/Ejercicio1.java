@@ -3,6 +3,24 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio1 {
+	
+	/*
+	 * Autor -> @mditaranto
+	 * 
+	 * Pruebras realizadas para la comprobacion de un correcto funcionamiento:
+	 * 
+	 * Numero introducido: 12:55:55 + 50 
+	 * Respuesta esperada: 12:56:46
+	 * Respuesta dada: 12:56:46
+	 * 
+	 * Numero introducido: 23:30:30 + 3600
+	 * Respuesta esperada: 0:30:31
+	 * Respuesta dada: 0:30:31
+	 * 
+	 * Numero introducido: 25:30:30 + 30
+	 * Respuesta esperada: Error
+	 * Respuesta dada: Error
+	 */
 
 	public static void main(String[] args) {
 
@@ -30,13 +48,13 @@ public class Ejercicio1 {
 		 * Utilizamos un if para que, en el caso de que los segundos y los minutos pasen
 		 * 60 y la hora 24, se muestre hora erronea.
 		 */
-		if (seg >= 60 && min >= 60 && hora >= 24) {
+		if (seg >= 60 || min >= 60 || hora >= 24) {
 			System.out.println("Datos introducidos erróneos");
 		} else {
 			/*
 			 *Creamos un for para ir aumentando los segundos 1 por 1 y establecer correctamente la hora
 			 */
-			for (int i = 0; i <= segaum; segaum++) {
+			for (int i = 0; i <= segaum; i++) {
 				// Utilizamos un if para que seg = 59, se restablezca a 0.
 				if (seg == 59) {
 					seg = 0;
@@ -60,7 +78,7 @@ public class Ejercicio1 {
 				}
 			}
 			// Se muestra la hora resultante al usuario
-			System.out.println(hora + " : " + min + " : " + seg);
+			System.out.println(hora + ":" + min + ":" + seg);
 		}
 		// Cerramos el obejto Scanner.
 		sc.close();
