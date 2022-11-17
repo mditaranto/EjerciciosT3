@@ -3,6 +3,25 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio10 {
+	
+	/*
+	 * Autor -> @mditaranto
+	 * 
+	 * Pruebras realizadas para la comprobacion de un correcto funcionamiento:
+	 *
+	 * Numero introducido:2222
+	 * Respuesta esperada: Es capicua
+	 * Respuesta dada: Es capicua
+	 * 
+	 * Numero introducido: 0
+	 * Respuesta esperada: Es capicua
+	 * Respuesta dada: Es capicua
+	 * 
+	 * Numero introducido: -5
+	 * Respuesta esperada: Introduzca un numero mayor o igual a 0
+	 * Respuesta dada: Introduzca un numero mayor o igual a 0
+	 */
+	 
 
 	public static void main(String[] args) {
 		// Creamos la variable donde guardaremos los datos introduccidos
@@ -15,10 +34,10 @@ public class Ejercicio10 {
 		//Nos aseguramos que introduzca un numero de al menos 2 cifras
 		do {
 			//Se le solicita al usuario un numero
-			System.out.print("Introduce un número mayor o igual a 10, te dire si es capicua o no: ");
+			System.out.print("Introduce un número mayor o igual a 0, te dire si es capicua o no: ");
 			N = sc.nextInt(); // El numero es guardado en la variable
 			//El bucle se va a repetir hasta que introduzca un numero mayor de 10
-		} while (N < 10);
+		} while (N < 0);
 
 		// le damos la vuelta al número separando numero por numero 
 		aux = N;

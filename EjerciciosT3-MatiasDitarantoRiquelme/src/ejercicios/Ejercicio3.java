@@ -3,6 +3,20 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio3 {
+	
+	/*
+	 * Autor -> @mditaranto
+	 * 
+	 * Pruebras realizadas para la comprobacion de un correcto funcionamiento:
+	 * 
+	 * Numero introducido: 5
+	 * Respuesta esperada: (piramide formada)
+	 * Respuesta dada: (piramide formada)
+	 * 
+	 * Numero introducido: 1
+	 * Respuesta esperada: (fin del programa)
+	 * Respuesta dada: (fin del programa)
+	 */
 
 	public static void main(String[] args) {
 		// Creamos la variable donde guardaremos los datos introduccidos
@@ -11,7 +25,7 @@ public class Ejercicio3 {
 		Scanner sc = new Scanner(System.in); // Creamos el objeto Scanner
 
 		// Se solicita al usuario que introduzca un numero
-		System.out.println("Introduzca un numero, dibujare una piramide");
+		System.out.println("Introduzca un numero positivo, dibujare una piramide");
 		n = sc.nextInt(); // El numero es guardado en la variable
 
 		// Mediante un for vamos sumando numeros hasta el del usuario

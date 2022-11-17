@@ -14,7 +14,12 @@ public class Ejercicio2 {
 	 * Respuesta dada: Error
 	 * 
 	 * Numero introducido: 13
-	 * Respuesta esperada: 
+	 * Respuesta esperada: 6
+	 * Respuesta dada: 6
+	 * 
+	 * Numero introducido: 1
+	 * Respuesta esperada: 0
+	 * Respuesta dada: 0
 	 */
 
 	public static void main(String[] args) {

@@ -3,15 +3,30 @@ package ejercicios;
 import java.util.Scanner;
 
 public class Ejercicio7 {
+	
+	/*
+	 * Autor -> @mditaranto
+	 * 
+	 * Pruebras realizadas para la comprobacion de un correcto funcionamiento:
+	 * 
+	 * Numero introducido: 5
+	 * Respuesta esperada: (Formacion de una piramide de numeros)
+	 * Respuesta dada: (Formacion de una piramide de numeros)
+	 * 
+	 * Numero introducido: -5
+	 * Respuesta esperada: (Finalizacion del programa)
+	 * Respuesta dada: (Finalizacion del programa)
+	 */
 
 	public static void main(String[] args) {
+		
 		// Creamos la variable donde guardaremos los datos introduccidos
 		int n;
 		
 		Scanner sc = new Scanner(System.in);// Creamos el objeto Scanner
 		
 		// Se solicita al usuario que introduzca un numero
-		System.out.println("Introduzca un numero, se formara una piramide :)");
+		System.out.println("Introduzca un numero positivo, se formara una piramide :)");
 		n = sc.nextInt();// El numero es guardado en la variable
 		
 		//Mediante un for creamos una variable que crezca hasta el numero introducido por el usuario

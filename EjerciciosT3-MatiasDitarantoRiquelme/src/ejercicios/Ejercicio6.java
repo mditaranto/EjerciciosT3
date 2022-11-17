@@ -4,7 +4,26 @@ import java.util.Scanner;
 
 public class Ejercicio6 {
 
+	/*
+	 * Autor -> @mditaranto
+	 * 
+	 * Pruebras realizadas para la comprobacion de un correcto funcionamiento:
+	 * 
+	 * Numero introducido: 5 
+	 * Respuesta esperada: (Formacion de una piramide denumeros) 
+	 * Respuesta dada: (Formacion de una piramide de numeros)
+	 * 
+	 * Numero introducido: 0 
+	 * Respuesta esperada: Se termina el programa 
+	 * Respuestadada: Se termina el programa
+	 * 
+	 * Numero introducido: -5 
+	 * Respuesta esperada: No ha introducido un valor entre 0 y 20 
+	 * Respuesta dada: No ha introducido un valor entre 0 y 20
+	 */
+
 	public static void main(String[] args) {
+		
 		// Creamos la variable donde guardaremos los datos introduccidos
 		int n;
 
@@ -15,7 +34,7 @@ public class Ejercicio6 {
 		n = sc.nextInt(); // El numero es guardado en la variable
 
 		// Si no esta entre los valores se termina el programa
-		if (n <= 20) {
+		if (n <= 20 && n >= 0) {
 			// Mediante un for establecemos una variable que crece hasta ser igual que el
 			// numero introducido por el usuario
 			for (int i = 1; i <= n; i++) {
