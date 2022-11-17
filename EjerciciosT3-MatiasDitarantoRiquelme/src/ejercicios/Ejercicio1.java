@@ -57,7 +57,7 @@ public class Ejercicio1 {
 			for (int i = 0; i <= segaum; i++) {
 				// Utilizamos un if para que seg = 59, se restablezca a 0.
 				if (seg == 59) {
-					seg = 0;
+					seg = 0; 
 					// Utilizamos otro if para que min=59, se restablezca a 0.
 					if (min == 59) {
 						min = 0;
